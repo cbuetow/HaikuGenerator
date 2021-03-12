@@ -1,0 +1,11 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+button#generateHaiku {
+    background-color: dodgerblue;
+    color: white;
+}
