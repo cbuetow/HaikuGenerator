@@ -23,7 +23,9 @@ $(document).ready(function () {
     //     }
     // }
 
-    function addWord() {
+    function addWord(event) {
+        event.preventDefault();
+
         // get  val() of word entered by user
         let userWord = $("input#enterWord").val();
 
@@ -33,6 +35,10 @@ $(document).ready(function () {
             let letter = userWord[i];
             if (letter === "-") {
                 dashCount++;
+                if (letter !== "-")
+                {
+                    break;
+                }
             }
         }
         let syllables = dashCount + 1;
